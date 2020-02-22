@@ -39,11 +39,11 @@ namespace Nemo8._0
         }
         private void OutOfPaperEventHandler(object sender, OutOfPaperEventArgs args)
         {
-            Console.WriteLine("[Printer log] Out of Range");
+            Console.WriteLine("[Printer log] Out of Range paper");
         }
-        private void OutOfTonerEventArgs(object sender, OutOfTonerEventArgs args)
+        private void OutOfTonerEventHandler(object sender, OutOfTonerEventArgs args)
         {
-            Console.WriteLine("[Printer log] Out of Range TONER");
+            Console.WriteLine("[Printer log] Out of Range TONER" + args.Color);
         }
         public Printer()
         {
@@ -56,10 +56,10 @@ namespace Nemo8._0
                 new Ink("Red",2)
             };
         }
-        public void OutOfTonerEventHandler(object sender, EventArgs args)
-        {
+        //public void OutOfTonerEventHandler(object sender, EventArgs args)
+        //{
 
-        }
+        //}
         public Printer(int paperCount) : this()
         {
             _paperCount = paperCount;

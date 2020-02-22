@@ -7,9 +7,11 @@ namespace Nemo8._0
         static bool printerOK = true;
         static void Main(string[] args)
         {
-            var printer = new Printer(11);
+            var printer = new Printer(10);
             
             printer.OutOfPaperEvent += OutOfPaperEventHandler2;
+            printer.OutOfTonerEvent += OutOfTonerEventHandler2;
+
             for(int i=0; i <12; i++)
             {
                 printer.Print(i+1);
