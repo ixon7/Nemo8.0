@@ -37,11 +37,11 @@ namespace Nemo8._0
                 }
             }
         }
-        private void OutOfPaperEventHandler(object sender, EventArgs args)
+        private void OutOfPaperEventHandler(object sender, OutOfPaperEventArgs args)
         {
             Console.WriteLine("[Printer log] Out of Range");
         }
-        private void OutOfTonerEventArgs(object sender, EventArgs args)
+        private void OutOfTonerEventArgs(object sender, OutOfTonerEventArgs args)
         {
             Console.WriteLine("[Printer log] Out of Range TONER");
         }
